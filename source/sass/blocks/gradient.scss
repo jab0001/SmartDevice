@@ -1,7 +1,8 @@
 .gradient {
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  min-height: 2000px;
 
   background: url("../img/chip-desktop.png") no-repeat, linear-gradient(#1b2d37 0%, #1b2d37 878px, white 878px, white 100%);
   background-size: 1920px auto;

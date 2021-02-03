@@ -1,0 +1,158 @@
+.website {
+  margin-left: 155px;
+}
+
+.website__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  max-height: 100px;
+  min-width: 500px;
+
+  list-style: none;
+}
+
+.website__link {
+  font-family: "PTMono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: #1b2d37;
+
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.website__title {
+  font-family: "RobotoCondensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #1b2d37;
+
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 64px;
+}
+
+.website__btn {
+  display: none;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    right: 16px;
+    top: 37px;
+
+    background: #c4c4c4;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    right: 16px;
+    top: 37px;
+
+    background: #c4c4c4;
+
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .website {
+    margin: 0;
+    margin-left: 29px;
+    width: 41.82%;
+  }
+
+  .website__title {
+    margin-bottom: 23px;
+    margin-top: 75px;
+  }
+
+  .website__list {
+    display: block;
+    min-width: 400px;
+    max-height: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .website {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    border-bottom: 1px solid #dcdddc;
+  }
+
+  .website__list {
+    margin: 0 auto;
+    min-width: 290px;
+    max-width: 290px;
+    max-height: 100%;
+
+    margin-bottom: 23px;
+  }
+
+  .website--closed {
+    display: none;
+  }
+
+  .website--opened {
+    display: block;
+  }
+
+  .website__title {
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 25px;
+    max-width: 290px;
+  }
+
+  .website__btn {
+    display: block;
+    outline: none;
+
+    &--remove::before {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .website--no-js {
+    display: block;
+  }
+}

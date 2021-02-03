@@ -75,6 +75,11 @@
 
   margin-left: 96px;
 
+  &:hover {
+    background: none;
+    border: 1px solid #ffffff;
+  }
+
   p {
     margin: 0;
   }
@@ -100,6 +105,10 @@
   position: absolute;
   bottom: 127px;
   left: -36px;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .banner__img {
