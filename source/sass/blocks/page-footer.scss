@@ -32,6 +32,17 @@
 
   top: 63px;
   left: -5px;
+  width: 222px;
+  height: 54px;
+
+  z-index: 1;
+
+  &-img {
+    position: absolute;
+
+    top: 63px;
+    left: -5px;
+  }
 }
 
 .page-footer__info {
@@ -55,6 +66,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-footer {
+    margin-top: 9px;
     min-height: 455px;
 
     &::after {
@@ -87,6 +99,11 @@
   .page-footer__logo {
     top: 18px;
     left: 25px;
+
+    &-img {
+      top: 18px;
+      left: 25px;
+    }
   }
 
   .page-footer__info {
@@ -108,6 +125,11 @@
     width: 215px;
     top: 46px;
     left: 16%;
+
+    &-img {
+      top: 46px;
+      left: 16%;
+    }
   }
 
   .page-footer__info {

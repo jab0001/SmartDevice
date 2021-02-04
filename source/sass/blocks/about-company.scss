@@ -1,0 +1,157 @@
+.about-company {
+  max-width: 1212px;
+  margin: 0 auto;
+  margin-top: 105px;
+  margin-bottom: 110px;
+
+  position: relative;
+
+  display: flex;
+}
+
+.about-company__title {
+  font-family: "RobotoCondensedRegular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+
+  color: #666666;
+
+  margin: 0;
+}
+
+.about-company__intro,
+.about-company__text {
+  font-family: "PTMono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #666666;
+
+  margin: 0;
+  margin-top: 20px;
+
+  max-width: 984px;
+}
+
+.about-company__btn {
+  font-family: "RobotoCondensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #00b2ff;
+
+  display: block;
+
+  width: 180px;
+  margin-top: 39px;
+
+  border: 1px solid #00b2ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &:hover {
+    color: #ffffff;
+    background: #00b2ff;
+  }
+}
+
+.about-company__img {
+  position: absolute;
+  top: 5px;
+
+  z-index: 1;
+}
+
+.about-company__wrapper {
+  position: relative;
+
+  margin-left: 209px;
+
+  z-index: 2;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .about-company {
+    margin-top: 57px;
+  }
+
+  .about-company__title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-company__intro,
+  .about-company__text {
+    margin-top: 21px;
+    max-height: 91px;
+    max-width: 99%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .about-company__wrapper {
+    margin-left: 212px;
+  }
+
+  .about-company__img {
+    width: 248px;
+
+    top: -1px;
+    left: -9px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company__img {
+    display: none;
+  }
+
+  .about-company__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about-company__wrapper {
+    margin: 0 auto;
+
+    width: 91.63%;
+  }
+
+  .about-company {
+    margin-top: 54px;
+  }
+
+  .about-company__intro {
+    margin-left: 2px;
+  }
+
+  .about-company__text {
+    margin-top: 39px;
+    margin-left: 4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+  }
+
+  .about-company__btn {
+    margin-top: 29px;
+    margin-left: 3px;
+  }
+}
