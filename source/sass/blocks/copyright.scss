@@ -16,16 +16,13 @@
 
 .copyright__text,
 .copyright__link {
-  font-family: "PTMono", monospace;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #1b2d37;
+  color: $text-color;
 
   opacity: 0.5;
 

@@ -20,7 +20,7 @@
 }
 
 .advantages__icon {
-  fill: #00b2ff;
+  fill: $second-color;
 }
 
 .advantages__item {
@@ -31,10 +31,10 @@
   padding-left: 43px;
 
   border: 1px solid #ebebeb;
-  border-left: 3px solid #00b2ff;
+  border-left: 3px solid $second-color;
   box-sizing: border-box;
 
-  background: #ffffff;
+  background: $white-color;
 
   cursor: pointer;
 
@@ -46,20 +46,14 @@
     line-height: 34px;
 
 
-    color: #00b2ff;
+    color: $second-color;
 
     margin: 0;
     margin-top: 15px;
   }
 
   p {
-    font-family: "PTMono", monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-
-    color: #666666;
+    color: $second-text-color;
 
     margin: 0;
     margin-top: 16px;
@@ -67,22 +61,22 @@
   }
 
   svg {
-    fill: #00b2ff;
+    fill: $second-color;
   }
 
   &:hover {
-    background: #00b2ff;
+    background: $second-color;
 
     p {
-      color: #ffffff;
+      color: $white-color;
     }
 
     h3 {
-      color: #ffffff;
+      color: $white-color;
     }
 
     svg {
-      fill: #ffffff;
+      fill: $white-color;
     }
   }
 }

@@ -17,20 +17,14 @@
   line-height: 51px;
 
 
-  color: #666666;
+  color: $second-text-color;
 
   margin: 0;
 }
 
 .about-company__intro,
 .about-company__text {
-  font-family: "PTMono", monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #666666;
+  color: $second-text-color;
 
   margin: 0;
   margin-top: 20px;
@@ -39,29 +33,20 @@
 }
 
 .about-company__btn {
-  font-family: "RobotoCondensed", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-  color: #00b2ff;
+  color: $second-color;
 
   display: block;
 
   width: 180px;
   margin-top: 39px;
 
-  border: 1px solid #00b2ff;
+  border: 1px solid $second-color;
   box-sizing: border-box;
   border-radius: 5px;
 
   &:hover {
-    color: #ffffff;
-    background: #00b2ff;
+    color: $white-color;
+    background: $second-color;
   }
 }
 

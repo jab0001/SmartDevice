@@ -1,9 +1,18 @@
 .button {
+  font-family: "RobotoCondensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
   width: 218px;
   height: 45px;
   padding-top: 14px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid $white-color;
   box-sizing: border-box;
   border-radius: 5px;
 }

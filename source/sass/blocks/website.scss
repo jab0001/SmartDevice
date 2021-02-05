@@ -17,13 +17,10 @@
 }
 
 .website__link {
-  font-family: "PTMono", monospace;
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 25px;
 
-  color: #1b2d37;
+  color: $text-color;
 
   opacity: 0.5;
 
@@ -42,7 +39,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #1b2d37;
+  color: $text-color;
 
   margin: 0;
   margin-bottom: 25px;

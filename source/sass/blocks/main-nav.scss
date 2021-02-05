@@ -15,6 +15,9 @@
 }
 
 .main-nav__link {
+  font-size: 16px;
+  line-height: 18px;
+
   display: block;
 
   margin: 0;
@@ -23,14 +26,7 @@
 
   position: relative;
 
-  font-family: "PTMono", monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-
-
-  color: #ffffff;
+  color: $white-color;
 
   &:hover {
     opacity: 0.5;
@@ -42,16 +38,7 @@
 }
 
 .main-nav__btn {
-  font-family: "RobotoCondensed", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-  color: #ffffff;
+  color: $white-color;
 
   display: block;
 
@@ -59,7 +46,7 @@
   margin-top: 37px;
 
   &:hover {
-    background: #00b2ff;
+    background: $second-color;
   }
 }
 
