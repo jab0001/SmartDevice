@@ -52,7 +52,10 @@
         <p class="banner__btn--desktop">Получить бесплатную консультацию</p>
         <p class="banner__btn--mobile">Бесплатная консультация</p>
       </a>
-      <img class="banner__img" src="img/banner-chip1x.png" width="705" height="515" alt="Платы нашего изготовления">
+      <picture>
+        <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
+        <img class="banner__img" src="img/banner-chip1x.png" width="705" height="515" alt="Платы нашего изготовления">
+      </picture>
       <a class="banner__scroll" href="#">Скролл вниз</a>
     </section>
     <div class="page-main__wrapper">
@@ -64,7 +67,8 @@
               <use xlink:href="#icon-stopwatch" />
             </svg>
             <h3>Оперативные сроки </h3>
-            <p>Усовершенствованная логистическая система позволяет нам&emsp;просчитывать стоимость, производить и доставлять
+            <p>Усовершенствованная логистическая система позволяет нам&emsp;просчитывать стоимость, производить и
+              доставлять
               заказы плат и комплектующих в самые короткие сроки.</p>
           </li>
           <li class="advantages__item">
@@ -94,7 +98,10 @@
         </ul>
       </section>
       <section class="about-company">
-        <img class="about-company__img" src="img/year1x.jpg" width="220" height="55" alt="2005 Year">
+        <picture>
+          <source srcset="img/year1x.webp 1x, img/year2x.webp 2x" type="image/webp">
+            <img class="about-company__img" src="img/year1x.jpg" width="220" height="55" alt="2005 Year">
+        </picture>
         <div class="about-company__wrapper">
           <h2 class="about-company__title">О компании</h2>
           <p class="about-company__intro">Мы поставляем электронные комплектующие, производим печатные платы и
@@ -107,6 +114,41 @@
         </div>
       </section>
     </div>
+    <section class="products">
+      <h2 class="products__title">Service Device предлагает следующие товары и услуги</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <a class="products__link" href="#">
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/chip-production-mobile1x.webp 1x, img/chip-production-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/chip-production-tablet1x.webp 1x, img/chip-production-tablet2x.webp 2x">
+              <img src="./img/chip-production1x.jpg" width="370" height="620" alt="Производство печатных плат">
+            </picture>
+            <span class="products__text">Производство печатных плат</span>
+          </a>
+        </li>
+        <li class="products__item">
+          <a class="products__link" href="#">
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/chip-mounting-mobile1x.webp 1x, img/chip-mounting-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/chip-mounting-tablet1x.webp 1x, img/chip-mounting-tablet2x.webp 2x">
+              <img src="./img/chip-mounting1x.jpg" width="370" height="620" alt="Монтаж печатных плат">
+            </picture>
+            <span class="products__text">Монтаж печатных плат</span>
+          </a>
+        </li>
+        <li class="products__item">
+          <a class="products__link" href="#">
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/chip-details-mobile1x.webp 1x, img/chip-details-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/chip-details-tablet1x.webp 1x, img/chip-details-tablet2x.webp 2x">
+              <img src="./img/chip-details1x.jpg" width="370" height="620" alt="Комплектующие для светотехники">
+            </picture>
+            <span class="products__text">Комплектующие для светотехники</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="page-footer" id="down">
     <div class="page-footer__wrapper">
