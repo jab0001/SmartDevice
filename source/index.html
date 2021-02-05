@@ -43,7 +43,7 @@
           </a>
         </li>
       </ul>
-      <a class="button main-nav__btn" href="request-call.html">Заказать звонок</a>
+      <a class="button main-nav__btn" href="#">Заказать звонок</a>
     </nav>
   </header>
   <main class="page-main">
@@ -57,11 +57,12 @@
       </a>
       <picture>
         <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
-        <img class="banner__img" src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515" alt="Платы нашего изготовления">
+        <img class="banner__img" src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515"
+          alt="Платы нашего изготовления">
       </picture>
       <a class="banner__scroll" href="#">Скролл вниз</a>
     </section>
-    <div class="page-main__wrapper">
+    <div class="page-main__wrapper" id="advantages">
       <section class="advantages">
         <h2 class="vissually-hidden">Преймущества SmartDevice</h2>
         <ul class="advantages__list">
@@ -104,7 +105,8 @@
         <h2 class="vissually-hidden">О компании</h2>
         <picture>
           <source srcset="img/year1x.webp 1x, img/year2x.webp 2x" type="image/webp">
-          <img class="about-company__img" src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55" alt="2005 Year">
+          <img class="about-company__img" src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55"
+            alt="2005 Year">
         </picture>
         <div class="about-company__wrapper">
           <h2 class="about-company__title">О компании</h2>
@@ -128,7 +130,8 @@
                 srcset="img/chip-production-mobile1x.webp 1x, img/chip-production-mobile2x.webp 2x">
               <source type="image/webp" media="(max-width: 1024px)"
                 srcset="img/chip-production-tablet1x.webp 1x, img/chip-production-tablet2x.webp 2x">
-              <img src="img/chip-production1x.jpg" srcset="img/chip-production2x.jpg 2x" width="370" height="620" alt="Производство печатных плат">
+              <img src="img/chip-production1x.jpg" srcset="img/chip-production2x.jpg 2x" width="370" height="620"
+                alt="Производство печатных плат">
             </picture>
             <span class="products__text">Производство печатных плат</span>
           </a>
@@ -140,7 +143,8 @@
                 srcset="img/chip-mounting-mobile1x.webp 1x, img/chip-mounting-mobile2x.webp 2x">
               <source type="image/webp" media="(max-width: 1024px)"
                 srcset="img/chip-mounting-tablet1x.webp 1x, img/chip-mounting-tablet2x.webp 2x">
-              <img src="img/chip-mounting1x.jpg" srcset="img/chip-mounting2x.jpg 2x" width="370" height="620" alt="Монтаж печатных плат">
+              <img src="img/chip-mounting1x.jpg" srcset="img/chip-mounting2x.jpg 2x" width="370" height="620"
+                alt="Монтаж печатных плат">
             </picture>
             <span class="products__text">Монтаж печатных плат</span>
           </a>
@@ -152,7 +156,8 @@
                 srcset="img/chip-details-mobile1x.webp 1x, img/chip-details-mobile2x.webp 2x">
               <source type="image/webp" media="(max-width: 1024px)"
                 srcset="img/chip-details-tablet1x.webp 1x, img/chip-details-tablet2x.webp 2x">
-              <img src="img/chip-details1x.jpg" srcset="img/chip-details2x.jpg 2x" width="370" height="620" alt="Комплектующие для светотехники">
+              <img src="img/chip-details1x.jpg" srcset="img/chip-details2x.jpg 2x" width="370" height="620"
+                alt="Комплектующие для светотехники">
             </picture>
             <span class="products__text">Комплектующие для светотехники</span>
           </a>
@@ -164,7 +169,8 @@
       <div class="contacts__container">
         <picture>
           <source srcset="img/papper-plane1x.webp 1x, img/papper-plane2x.webp 2x" type="image/webp">
-          <img src="img/papper-plane1x.jpg" srcset="img/papper-plane2x.jpg 2x" width="511" height="288" alt="Бумажный самолет">
+          <img src="img/papper-plane1x.jpg" srcset="img/papper-plane2x.jpg 2x" width="511" height="288"
+            alt="Бумажный самолет">
         </picture>
         <div class="contacts__wrapper">
           <h3 class="contacts__title">Остались вопросы? Задайте их нам!</h3>
@@ -173,14 +179,16 @@
             <label class="vissually-hidden" for="name">Имя</label>
             <input class="question-form__input" type="text" name="user-name" id="name" placeholder="Имя" required>
             <label class="vissually-hidden" for="phone">Телефон</label>
-            <input class="question-form__input" type="tel" name="user-phone" id="phone"
-              placeholder="Телефон" required>
-            <textarea class="question-form__text" name="user-text" id="message" placeholder="Ваш вопрос" required></textarea>
+            <input class="question-form__input" type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
+            <textarea class="question-form__text" name="user-text" id="message" placeholder="Ваш вопрос"
+              required></textarea>
             <label class="vissually-hidden" for="message">Ваш вопрос</label>
             <div class="question-form__wrapper">
               <button class="button question-form__btn" type="submit">Задать вопрос</button>
-              <input class="vissually-hidden question-form__input-checkbox" type="checkbox" name="user-agreement" id="confidentiality" checked>
-              <label class= "question-form__label" for="confidentiality">Я согласен на обработку персональных данных</label>
+              <input class="vissually-hidden question-form__input-checkbox" type="checkbox" name="user-agreement"
+                id="confidentiality" checked>
+              <label class="question-form__label" for="confidentiality">Я согласен на обработку персональных
+                данных</label>
             </div>
           </form>
         </div>
@@ -190,7 +198,7 @@
   <footer class="page-footer" id="down">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-img" href="#">
-      <img src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
+        <img src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
       </a>
       <p class="page-footer__info">1999-2018 SD Service Devices</p>
       <div class="page-footer__social social">
@@ -295,8 +303,28 @@
         </li>
       </ul>
     </div>
-
   </footer>
+  <div class="fog"></div>
+  <div class="modal">
+    <div class="modal__container">
+      <button class="modal__btn-close" type="button">Закрыть</button>
+      <h2 class="modal__title">Закажите звонок</h2>
+      <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="modal__form" method="post">
+        <label class="vissually-hidden" for="user-name-modal">Имя</label>
+        <input type="text" name="user-name" id="user-name-modal" placeholder="Имя" required>
+        <label class="vissually-hidden" for="user-phone-modal">Телефон</label>
+        <input type="tel" name="user-phone" id="user-phone-modal" placeholder="Телефон" required>
+        <label class="vissually-hidden" for="user-text-modal">Ваш вопрос</label>
+        <textarea name="user-text" id="user-text-modal" placeholder="Ваш вопрос" required></textarea>
+        <div class="modal__wrapper">
+          <button class="button modal__btn" type="submit">Отправить</button>
+          <input class="vissually-hidden modal-form__input" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked>
+          <label class="modal-form__label" for="confidentiality-modal">Я согласен на обработку&nbsp;&nbsp;персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
   <script src="js/pickturefill.js"></script>
   <script src="js/imask.js"></script>
   <script src="js/App.js"></script>

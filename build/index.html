@@ -85,7 +85,7 @@
           </a>
         </li>
       </ul>
-      <a class="button main-nav__btn" href="request-call.html">Заказать звонок</a>
+      <a class="button main-nav__btn" href="#">Заказать звонок</a>
     </nav>
   </header>
   <main class="page-main">
@@ -103,7 +103,7 @@
       </picture>
       <a class="banner__scroll" href="#">Скролл вниз</a>
     </section>
-    <div class="page-main__wrapper">
+    <div class="page-main__wrapper" id="advantages">
       <section class="advantages">
         <h2 class="vissually-hidden">Преймущества SmartDevice</h2>
         <ul class="advantages__list">
@@ -215,7 +215,8 @@
             <div class="question-form__wrapper">
               <button class="button question-form__btn" type="submit">Задать вопрос</button>
               <input class="vissually-hidden question-form__input-checkbox" type="checkbox" name="user-agreement" id="confidentiality" checked="">
-              <label class="question-form__label" for="confidentiality">Я согласен на обработку персональных данных</label>
+              <label class="question-form__label" for="confidentiality">Я согласен на обработку персональных
+                данных</label>
             </div>
           </form>
         </div>
@@ -225,7 +226,7 @@
   <footer class="page-footer" id="down">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-img" href="#">
-      <img src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
+        <img src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
       </a>
       <p class="page-footer__info">1999-2018 SD Service Devices</p>
       <div class="page-footer__social social">
@@ -330,8 +331,28 @@
         </li>
       </ul>
     </div>
-
   </footer>
+  <div class="fog"></div>
+  <div class="modal">
+    <div class="modal__container">
+      <button class="modal__btn-close" type="button">Закрыть</button>
+      <h2 class="modal__title">Закажите звонок</h2>
+      <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="modal__form" method="post">
+        <label class="vissually-hidden" for="user-name-modal">Имя</label>
+        <input type="text" name="user-name" id="user-name-modal" placeholder="Имя" required="">
+        <label class="vissually-hidden" for="user-phone-modal">Телефон</label>
+        <input type="tel" name="user-phone" id="user-phone-modal" placeholder="Телефон" required="">
+        <label class="vissually-hidden" for="user-text-modal">Ваш вопрос</label>
+        <textarea name="user-text" id="user-text-modal" placeholder="Ваш вопрос" required=""></textarea>
+        <div class="modal__wrapper">
+          <button class="button modal__btn" type="submit">Отправить</button>
+          <input class="vissually-hidden modal-form__input" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked="">
+          <label class="modal-form__label" for="confidentiality-modal">Я согласен на обработку&nbsp;&nbsp;персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
   <script src="js/pickturefill.js"></script>
   <script src="js/imask.js"></script>
   <script src="js/App.js"></script>
