@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
+  <link rel="preload" href="fonts/PTMono.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -13,6 +16,8 @@
   <div style="display:none;">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow" viewBox="0 0 6 9">
 <path d="M1 8.5L5 4.5L1 0.5" stroke="white" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-checked" viewBox="0 0 9 6">
+<path d="M0.5 2L3.5 5L8 0.5" stroke="white"></path>
 </symbol><symbol id="icon-detective" viewBox="0 0 36 31">
 <path d="M18 9.75821C17.6119 9.75821 17.2969 10.0752 17.2969 10.4663C17.2969 10.8571 17.6119 11.1743 18 11.1743C18.3881 11.1743 18.7031 10.8571 18.7031 10.4663C18.7031 10.0752 18.3881 9.75821 18 9.75821Z" fill="#00B2FF"></path>
 <path d="M33.8906 14.0066H31.1548C29.7125 9.85946 27.6199 2.58774 23.8291 0.529671C21.9331 -0.498398 20.141 0.219618 19.4669 1.67833C19.1802 2.29844 18.6075 2.62453 18 2.62453C17.3842 2.62453 16.8162 2.29124 16.5331 1.67888C15.8829 0.269957 14.1336 -0.513887 12.3041 0.380314C8.45261 2.26386 6.29874 9.8282 4.84525 14.0066H2.10938C0.944 14.0066 0 14.9569 0 16.1308C0 17.3018 0.946198 18.2549 2.10938 18.2549H33.8906C35.056 18.2549 36 17.3043 36 16.1308C36 14.9594 35.0538 14.0066 33.8906 14.0066ZM7.31525 11.1743H15.1875C15.5759 11.1743 15.8906 10.8571 15.8906 10.4663C15.8906 10.0752 15.5759 9.75823 15.1875 9.75823H7.80688C9.92642 3.86225 11.9064 2.14908 12.9183 1.65427C14.0221 1.11493 14.9307 1.56631 15.2581 2.27603C15.7739 3.39178 16.8409 4.04065 18 4.04065C19.1618 4.04065 20.2275 3.38929 20.7419 2.27603C21.0789 1.54612 21.9922 1.14203 23.1619 1.77624C24.1784 2.32831 26.1524 4.09845 28.1928 9.75823H20.8125C20.4241 9.75823 20.1094 10.0752 20.1094 10.4663C20.1094 10.8574 20.4241 11.1743 20.8125 11.1743H28.685C29.0404 12.2066 29.4096 13.2717 29.665 14.0066H6.33527C6.58987 13.2736 6.95819 12.211 7.31525 11.1743ZM33.8906 16.8388H2.10938C1.72156 16.8388 1.40625 16.521 1.40625 16.1308C1.40625 15.7397 1.72101 15.4227 2.10938 15.4227H33.8906C34.2784 15.4227 34.5938 15.7402 34.5938 16.1308C34.5938 16.5216 34.2787 16.8388 33.8906 16.8388Z"></path>
@@ -89,12 +94,12 @@
       <h2 class="banner__title">Печатные платы</h2>
       <p class="banner__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <a class="button banner__btn" href="#">
-        <p class="banner__btn--desktop">Получить бесплатную консультацию</p>
-        <p class="banner__btn--mobile">Бесплатная консультация</p>
+        <p class="banner__btn-desktop">Получить бесплатную консультацию</p>
+        <p class="banner__btn-mobile">Бесплатная консультация</p>
       </a>
       <picture>
         <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
-        <img class="banner__img" src="img/banner-chip1x.png" width="705" height="515" alt="Платы нашего изготовления">
+        <img class="banner__img" src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515" alt="Платы нашего изготовления">
       </picture>
       <a class="banner__scroll" href="#">Скролл вниз</a>
     </section>
@@ -138,9 +143,10 @@
         </ul>
       </section>
       <section class="about-company">
+        <h2 class="vissually-hidden">О компании</h2>
         <picture>
           <source srcset="img/year1x.webp 1x, img/year2x.webp 2x" type="image/webp">
-            <img class="about-company__img" src="img/year1x.jpg" width="220" height="55" alt="2005 Year">
+          <img class="about-company__img" src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55" alt="2005 Year">
         </picture>
         <div class="about-company__wrapper">
           <h2 class="about-company__title">О компании</h2>
@@ -162,7 +168,7 @@
             <picture>
               <source type="image/webp" media="(max-width: 768px)" srcset="img/chip-production-mobile1x.webp 1x, img/chip-production-mobile2x.webp 2x">
               <source type="image/webp" media="(max-width: 1024px)" srcset="img/chip-production-tablet1x.webp 1x, img/chip-production-tablet2x.webp 2x">
-              <img src="./img/chip-production1x.jpg" width="370" height="620" alt="Производство печатных плат">
+              <img src="img/chip-production1x.jpg" srcset="img/chip-production2x.jpg 2x" width="370" height="620" alt="Производство печатных плат">
             </picture>
             <span class="products__text">Производство печатных плат</span>
           </a>
@@ -172,7 +178,7 @@
             <picture>
               <source type="image/webp" media="(max-width: 768px)" srcset="img/chip-mounting-mobile1x.webp 1x, img/chip-mounting-mobile2x.webp 2x">
               <source type="image/webp" media="(max-width: 1024px)" srcset="img/chip-mounting-tablet1x.webp 1x, img/chip-mounting-tablet2x.webp 2x">
-              <img src="./img/chip-mounting1x.jpg" width="370" height="620" alt="Монтаж печатных плат">
+              <img src="img/chip-mounting1x.jpg" srcset="img/chip-mounting2x.jpg 2x" width="370" height="620" alt="Монтаж печатных плат">
             </picture>
             <span class="products__text">Монтаж печатных плат</span>
           </a>
@@ -182,19 +188,45 @@
             <picture>
               <source type="image/webp" media="(max-width: 768px)" srcset="img/chip-details-mobile1x.webp 1x, img/chip-details-mobile2x.webp 2x">
               <source type="image/webp" media="(max-width: 1024px)" srcset="img/chip-details-tablet1x.webp 1x, img/chip-details-tablet2x.webp 2x">
-              <img src="./img/chip-details1x.jpg" width="370" height="620" alt="Комплектующие для светотехники">
+              <img src="img/chip-details1x.jpg" srcset="img/chip-details2x.jpg 2x" width="370" height="620" alt="Комплектующие для светотехники">
             </picture>
             <span class="products__text">Комплектующие для светотехники</span>
           </a>
         </li>
       </ul>
     </section>
+    <section class="contacts" id="contacts">
+      <h2 class="vissually-hidden">Информация для обратной связи</h2>
+      <div class="contacts__container">
+        <picture>
+          <source srcset="img/papper-plane1x.webp 1x, img/papper-plane2x.webp 2x" type="image/webp">
+          <img src="img/papper-plane1x.jpg" srcset="img/papper-plane2x.jpg 2x" width="511" height="288" alt="Бумажный самолет">
+        </picture>
+        <div class="contacts__wrapper">
+          <h3 class="contacts__title">Остались вопросы? Задайте их нам!</h3>
+          <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
+          <form class="question-form" method="post">
+            <label class="vissually-hidden" for="name">Имя</label>
+            <input class="question-form__input" type="text" name="user-name" id="name" placeholder="Имя" required="">
+            <label class="vissually-hidden" for="phone">Телефон</label>
+            <input class="question-form__input" type="tel" name="user-phone" id="phone" placeholder="Телефон" required="">
+            <textarea class="question-form__text" name="user-text" id="message" placeholder="Ваш вопрос" required=""></textarea>
+            <label class="vissually-hidden" for="message">Ваш вопрос</label>
+            <div class="question-form__wrapper">
+              <button class="button question-form__btn" type="submit">Задать вопрос</button>
+              <input class="vissually-hidden question-form__input-checkbox" type="checkbox" name="user-agreement" id="confidentiality" checked="">
+              <label class="question-form__label" for="confidentiality">Я согласен на обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer" id="down">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="#"></a>
-      <img class="page-footer__logo-img" src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
-      
+      <a class="page-footer__logo-img" href="#">
+      <img src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
+      </a>
       <p class="page-footer__info">1999-2018 SD Service Devices</p>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -271,18 +303,18 @@
           <li class="office__item">
             <a class="office__link" href="tel:+7(495)589-40-50">
               +7 (495) 589-40-50
-          </a></li>
-          
+            </a>
+          </li>
           <li class="office__item">
             <a class="office__link" href="tel:+7(925)003-87-67">
               +7 (925) 003-87-67
-          </a></li>
-          
+            </a>
+          </li>
           <li class="office__item">
             <a class="office__link" href="tel:+7(926)926-080-79">
               +7 (926) 926-080-79
-          </a></li>
-          
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -301,7 +333,9 @@
 
   </footer>
   <script src="js/pickturefill.js"></script>
+  <script src="js/imask.js"></script>
   <script src="js/App.js"></script>
+
 </body>
 
 </html>
