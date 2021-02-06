@@ -3,7 +3,7 @@
   margin-top: 50px;
 }
 
-.question-form__input {
+.question-form input {
   width: 250px;
   height: 50px;
   margin-left: 20px;
@@ -20,7 +20,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $white-color;
+    outline: 1px solid $white-color;
   }
 
   &::placeholder {
@@ -29,7 +29,7 @@
   }
 }
 
-.question-form__text {
+.question-form textarea {
   width: 550px;
   min-height: 136px;
 
@@ -50,7 +50,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $white-color;
+    outline: 1px solid $white-color;
   }
 
   &::placeholder {
@@ -83,7 +83,7 @@
   margin-top: 42px;
 }
 
-.question-form__label {
+.question-form label {
   font-size: 14px;
   line-height: 16px;
 
@@ -97,9 +97,11 @@
 
   margin-top: 8px;
   padding-left: 70px;
+
+  cursor: pointer;
 }
 
-.question-form__input-checkbox + label::before {
+.question-form [type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -110,7 +112,7 @@
   cursor: pointer;
 }
 
-.question-form__input-checkbox:checked + label::after {
+.question-form [type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -127,12 +129,12 @@
     margin-top: 54px;
   }
 
-  .question-form__input {
+  .question-form input {
     width: 260px;
     margin-right: 5px;
   }
 
-  .question-form__text {
+  .question-form textarea {
     width: 572px;
     min-height: 146px;
   }
@@ -145,7 +147,7 @@
     width: 280px;
   }
 
-  .question-form__label {
+  .question-form label {
     padding-left: 73px;
   }
 }
@@ -156,13 +158,13 @@
     margin-top: 24px;
   }
 
-  .question-form__input {
+  .question-form input {
     margin: 0;
     margin-bottom: 30px;
     width: 270px;
   }
 
-  .question-form__text {
+  .question-form textarea {
     margin: 0;
     width: 270px;
     min-height: 90px;
@@ -179,16 +181,16 @@
     width: 100%;
   }
 
-  .question-form__label {
+  .question-form label {
     margin-top: 30px;
     padding-left: 33px;
   }
 
-  .question-form__input-checkbox + label::before {
+  .question-form [type="checkbox"] + label::before {
     left: 0;
   }
 
-  .question-form__input-checkbox:checked + label::after {
+  .question-form [type="checkbox"]:checked + label::after {
     left: 0;
   }
 }

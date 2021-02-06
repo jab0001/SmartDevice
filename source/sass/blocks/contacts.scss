@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.contacts__title {
+.contacts h3 {
   font-family: "RobotoCondensedRegular", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -26,7 +26,7 @@
   margin-left: 110px;
 }
 
-.contacts__text {
+.contacts p {
   margin: 0;
   margin-top: 10px;
   margin-left: 114px;
@@ -62,7 +62,7 @@
     margin: 0;
   }
 
-  .contacts__title {
+  .contacts h3 {
     font-size: 32px;
     line-height: 45px;
 
@@ -70,9 +70,13 @@
     margin-left: 27px;
   }
 
-  .contacts__text {
+  .contacts p {
     margin-top: 16px;
     margin-left: 32px;
+  }
+
+  .contacts__container img {
+    display: none;
   }
 }
 
@@ -92,15 +96,19 @@
     width: 100%;
   }
 
-  .contacts__title {
+  .contacts h3 {
     font-size: 28px;
     line-height: 39px;
 
     margin: 0;
   }
 
-  .contacts__text {
+  .contacts p {
     margin: 0;
     margin-top: 12px;
+  }
+
+  .contacts__container img {
+    display: none;
   }
 }

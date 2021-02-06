@@ -1,7 +1,7 @@
 .banner {
   margin: 0 auto;
 
-  max-width: 1411px;
+  min-width: 1411px;
   min-height: 788px;
   position: relative;
   background: url("../img/triangle.svg") no-repeat;
@@ -10,7 +10,7 @@
   background-position-y: -90px;
 }
 
-.banner__title {
+.banner h2 {
   font-family: "RobotoCondensed", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -28,7 +28,7 @@
   padding-top: 225px;
 }
 
-.banner__text {
+.banner p {
   font-size: 22px;
   line-height: 34px;
 
@@ -78,7 +78,7 @@
     margin: 0;
   }
 
-  &-mobile {
+  &--mobile {
     display: none;
   }
 }
@@ -102,7 +102,7 @@
   }
 }
 
-.banner__img {
+.banner img {
   position: absolute;
   top: 168px;
   right: -81px;
@@ -110,22 +110,23 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .banner {
+    min-width: 770px;
     min-height: 600px;
+
+    padding-bottom: 7px;
     position: relative;
     background-size: 1500px auto;
     background-position-x: -364px;
     background-position-y: -205px;
-
-    overflow: hidden;
   }
 
-  .banner__img {
+  .banner img {
     width: 465px;
     top: 37px;
     right: -205px;
   }
 
-  .banner__title {
+  .banner h2 {
     width: 61.04%;
     padding-top: 112px;
     margin-left: 86px;
@@ -134,7 +135,7 @@
     line-height: 70px;
   }
 
-  .banner__text {
+  .banner p {
     font-size: 18px;
     line-height: 28px;
 
@@ -153,7 +154,7 @@
     width: 379px;
     margin-left: 138px;
 
-    &-mobile {
+    &--mobile {
       display: none;
     }
   }
@@ -165,23 +166,27 @@
 
 @media (max-width: $tablet-width) {
   .banner {
+    min-width: 100%;
     min-height: 580px;
     position: relative;
     background-size: 1439px auto;
     background-position-x: -619px;
     background-position-y: -192px;
+
+    padding-bottom: 7px;
+
     overflow: hidden;
   }
 
-  .banner__img {
+  .banner img {
     width: 301px;
     top: 32px;
-    right: -7px;
+    left: 8%;
 
     overflow: hidden;
   }
 
-  .banner__title {
+  .banner h2 {
     position: relative;
 
     font-size: 40px;
@@ -189,11 +194,13 @@
 
     margin-left: 15px;
 
+    width: 90%;
+
     z-index: 1;
   }
 
-  .banner__text {
-    width: 245px;
+  .banner p {
+    width: 85%;
 
     font-size: 16px;
     line-height: 25px;
@@ -210,15 +217,13 @@
 
   .banner__btn {
     margin-left: 18px;
-    width: 285px;
+    width: 90.07%;
 
-    z-index: 9999;
-
-    &-desktop {
+    &--desktop {
       display: none;
     }
 
-    &-mobile {
+    &--mobile {
       display: block;
     }
   }

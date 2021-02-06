@@ -9,7 +9,7 @@
   display: flex;
 }
 
-.about-company__title {
+.about-company h2 {
   font-family: "RobotoCondensedRegular", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -22,8 +22,7 @@
   margin: 0;
 }
 
-.about-company__intro,
-.about-company__text {
+.about-company p {
   color: $second-text-color;
 
   margin: 0;
@@ -50,7 +49,7 @@
   }
 }
 
-.about-company__img {
+.about-company img {
   position: absolute;
   top: 5px;
 
@@ -70,13 +69,12 @@
     margin-top: 57px;
   }
 
-  .about-company__title {
+  .about-company h2 {
     font-size: 32px;
     line-height: 45px;
   }
 
-  .about-company__intro,
-  .about-company__text {
+  .about-company p {
     margin-top: 21px;
     max-height: 91px;
     max-width: 99%;
@@ -92,7 +90,7 @@
     margin-left: 212px;
   }
 
-  .about-company__img {
+  .about-company img {
     width: 248px;
 
     top: -1px;
@@ -101,31 +99,33 @@
 }
 
 @media (max-width: $tablet-width) {
-  .about-company__img {
+  .about-company img {
     display: none;
   }
 
-  .about-company__title {
+  .about-company h2 {
     font-size: 28px;
     line-height: 39px;
+
+    margin-bottom: 0;
   }
 
   .about-company__wrapper {
     margin: 0 auto;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
 
-    width: 91.63%;
+    width: 97.63%;
   }
 
   .about-company {
     margin-top: 54px;
+    margin-bottom: 65px;
   }
 
-  .about-company__intro {
-    margin-left: 2px;
-  }
-
-  .about-company__text {
-    margin-top: 39px;
+  .about-company p {
+    margin-bottom: 19px;
     margin-left: 4px;
 
     overflow: hidden;
@@ -136,7 +136,7 @@
   }
 
   .about-company__btn {
-    margin-top: 29px;
+    margin-top: 10px;
     margin-left: 3px;
   }
 }

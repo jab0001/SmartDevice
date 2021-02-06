@@ -34,7 +34,7 @@
   left: -5px;
 }
 
-.page-footer__info {
+.page-footer p {
   font-size: 13px;
   line-height: 24px;
 
@@ -52,7 +52,6 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-footer {
-    margin-top: 9px;
     min-height: 455px;
 
     &::after {
@@ -87,13 +86,13 @@
     left: 25px;
   }
 
-  .page-footer__info {
+  .page-footer p {
     display: block;
     width: 31%;
 
     margin-top: 35px;
     margin-left: auto;
-    margin-right: 46px;
+    margin-right: 38px;
   }
 }
 
@@ -107,7 +106,7 @@
     left: 16%;
   }
 
-  .page-footer__info {
+  .page-footer p {
     display: block;
 
     margin: 0 auto;

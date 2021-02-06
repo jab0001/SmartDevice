@@ -5,7 +5,7 @@
   list-style: none;
 }
 
-.office__title {
+.office h3 {
   font-family: "RobotoCondensed", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -23,8 +23,9 @@
   margin-left: 2px;
 }
 
-.office__text,
+.office__item p,
 .office__link {
+  display: block;
   font-size: 15px;
   line-height: 25px;
 
@@ -33,6 +34,9 @@
   opacity: 0.5;
 
   margin: 0;
+
+  letter-spacing: inherit;
+  text-transform: none;
 }
 
 .office__link:hover {
@@ -79,8 +83,12 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .office {
-    width: 47.79%;
+    width: 46.5%;
     margin-top: 10px;
+  }
+
+  .office__item p {
+    width: 100%;
   }
 }
 
@@ -110,7 +118,7 @@
     display: block;
   }
 
-  .office__title {
+  .office h3 {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 31px;

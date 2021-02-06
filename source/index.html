@@ -6,24 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
-  <link rel="preload" href="fonts/PTMono.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed.woff2" as="font">
+  <link rel="preload" href="fonts/ptMono.woff2" as="font">
+  <link rel="preload" href="fonts/robotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/robotoCondensed.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="gradient">
+<body>
   <div style="display:none;">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
 
   <header class="page-header">
+    <div class="page-header__container">
     <a class="page-header__logo" href="#">
       <picture>
         <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
         <img src="img/logo-desktop.svg" width="239" height="52" alt="SmartDevice">
       </picture>
     </a>
+
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -44,27 +46,29 @@
         </li>
       </ul>
       <a class="button main-nav__btn" href="#">Заказать звонок</a>
+    </div>
+      <section class="banner">
+        <h2>Печатные платы</h2>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="button banner__btn" href="#">
+          <span class="banner__btn--desktop">Получить бесплатную консультацию</span>
+          <span class="banner__btn--mobile">Бесплатная консультация</span>
+        </a>
+        <picture>
+          <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
+          <img src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515"
+            alt="Платы нашего изготовления">
+        </picture>
+        <a class="banner__scroll" href="#">Скролл вниз</a>
+      </section>
+
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="vissually-hidden">Магазин печатных плат SmartDevice</h1>
-    <section class="banner">
-      <h2 class="banner__title">Печатные платы</h2>
-      <p class="banner__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="button banner__btn" href="#">
-        <p class="banner__btn-desktop">Получить бесплатную консультацию</p>
-        <p class="banner__btn-mobile">Бесплатная консультация</p>
-      </a>
-      <picture>
-        <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
-        <img class="banner__img" src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515"
-          alt="Платы нашего изготовления">
-      </picture>
-      <a class="banner__scroll" href="#">Скролл вниз</a>
-    </section>
+    <h1 class="visually-hidden">Магазин печатных плат SmartDevice</h1>
     <div class="page-main__wrapper" id="advantages">
       <section class="advantages">
-        <h2 class="vissually-hidden">Преймущества SmartDevice</h2>
+        <h2 class="visually-hidden">Преимущества SmartDevice</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <svg width="29" height="35">
@@ -82,14 +86,14 @@
             <h3>Крупные поставщики</h3>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC,
               REFOND.
-              Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+              Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
           </li>
           <li class="advantages__item">
             <svg width="36" height="31">
               <use xlink:href="#icon-detective" />
             </svg>
             <h3>Полная конфиденциальность</h3>
-            <p>По желанию клиента&nbsp;мы обеспечиваем полную конфеденциальность.</p>
+            <p>По желанию клиента&nbsp;мы обеспечиваем полную конфиденциальность.</p>
           </li>
           <li class="advantages__item">
             <svg width="35" height="35">
@@ -102,17 +106,17 @@
         </ul>
       </section>
       <section class="about-company">
-        <h2 class="vissually-hidden">О компании</h2>
+        <h2 class="visually-hidden">О компании</h2>
         <picture>
           <source srcset="img/year1x.webp 1x, img/year2x.webp 2x" type="image/webp">
-          <img class="about-company__img" src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55"
+          <img src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55"
             alt="2005 Year">
         </picture>
         <div class="about-company__wrapper">
-          <h2 class="about-company__title">О компании</h2>
-          <p class="about-company__intro">Мы поставляем электронные комплектующие, производим печатные платы и
+          <h2>О компании</h2>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и
             предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about-company__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
             Железных Дорог (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
             крупнейшие Производители светотехники России.</p>
@@ -121,7 +125,7 @@
       </section>
     </div>
     <section class="products">
-      <h2 class="products__title">Service Device предлагает следующие товары и услуги</h2>
+      <h2>Service Device предлагает следующие товары и услуги</h2>
       <ul class="products__list">
         <li class="products__item">
           <a class="products__link" href="#">
@@ -133,7 +137,7 @@
               <img src="img/chip-production1x.jpg" srcset="img/chip-production2x.jpg 2x" width="370" height="620"
                 alt="Производство печатных плат">
             </picture>
-            <span class="products__text">Производство печатных плат</span>
+            <span>Производство печатных плат</span>
           </a>
         </li>
         <li class="products__item">
@@ -146,7 +150,7 @@
               <img src="img/chip-mounting1x.jpg" srcset="img/chip-mounting2x.jpg 2x" width="370" height="620"
                 alt="Монтаж печатных плат">
             </picture>
-            <span class="products__text">Монтаж печатных плат</span>
+            <span>Монтаж печатных плат</span>
           </a>
         </li>
         <li class="products__item">
@@ -159,13 +163,13 @@
               <img src="img/chip-details1x.jpg" srcset="img/chip-details2x.jpg 2x" width="370" height="620"
                 alt="Комплектующие для светотехники">
             </picture>
-            <span class="products__text">Комплектующие для светотехники</span>
+            <span>Комплектующие для светотехники</span>
           </a>
         </li>
       </ul>
     </section>
     <section class="contacts" id="contacts">
-      <h2 class="vissually-hidden">Информация для обратной связи</h2>
+      <h2 class="visually-hidden">Информация для обратной связи</h2>
       <div class="contacts__container">
         <picture>
           <source srcset="img/papper-plane1x.webp 1x, img/papper-plane2x.webp 2x" type="image/webp">
@@ -173,21 +177,21 @@
             alt="Бумажный самолет">
         </picture>
         <div class="contacts__wrapper">
-          <h3 class="contacts__title">Остались вопросы? Задайте их нам!</h3>
-          <p class="contacts__text">Мы проконсультируем Вас бесплатно</p>
+          <h3>Остались вопросы? Задайте их нам!</h3>
+          <p>Мы проконсультируем Вас бесплатно</p>
           <form class="question-form" method="post">
-            <label class="vissually-hidden" for="name">Имя</label>
-            <input class="question-form__input" type="text" name="user-name" id="name" placeholder="Имя" required>
-            <label class="vissually-hidden" for="phone">Телефон</label>
-            <input class="question-form__input" type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
-            <textarea class="question-form__text" name="user-text" id="message" placeholder="Ваш вопрос"
+            <label class="visually-hidden" for="name">Имя</label>
+            <input type="text" name="user-name" id="name" placeholder="Имя" required>
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
+            <textarea name="user-text" id="message" placeholder="Ваш вопрос"
               required></textarea>
-            <label class="vissually-hidden" for="message">Ваш вопрос</label>
+            <label class="visually-hidden" for="message">Ваш вопрос</label>
             <div class="question-form__wrapper">
               <button class="button question-form__btn" type="submit">Задать вопрос</button>
-              <input class="vissually-hidden question-form__input-checkbox" type="checkbox" name="user-agreement"
+              <input class="visually-hidden" type="checkbox" name="user-agreement"
                 id="confidentiality" checked>
-              <label class="question-form__label" for="confidentiality">Я согласен на обработку персональных
+              <label for="confidentiality">Я согласен на обработку персональных
                 данных</label>
             </div>
           </form>
@@ -200,7 +204,7 @@
       <a class="page-footer__logo-img" href="#">
         <img src="img/footer-logo.svg" width="222" height="52" alt="SmartDevice">
       </a>
-      <p class="page-footer__info">1999-2018 SD Service Devices</p>
+      <p>1999-2018 SD Service Devices</p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -208,7 +212,7 @@
               <svg width="27" height="27">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
-              <span class="vissually-hidden">
+              <span class="visually-hidden">
                 Мы в Фейсбуке
               </span>
             </a>
@@ -218,7 +222,7 @@
               <svg width="26" height="26">
                 <use xlink:href="#icon-ok"></use>
               </svg>
-              <span class="vissually-hidden">
+              <span class="visually-hidden">
                 Мы в Одноклассниках
               </span>
             </a>
@@ -228,7 +232,7 @@
               <svg width="27" height="26">
                 <use xlink:href="#icon-vk"></use>
               </svg>
-              <span class="vissually-hidden">
+              <span class="visually-hidden">
                 Мы в Вконтакте
               </span>
             </a>
@@ -236,11 +240,11 @@
         </ul>
       </div>
       <div class="page-footer__website website">
-        <h3 class="website__title">Разделы сайта</h3>
+        <h3>Разделы сайта</h3>
         <button class="website__btn" type="button">
-          <span class="vissually-hidden">Открыть</span>
+          <span class="visually-hidden">Открыть</span>
         </button>
-        <ul class="website__list website--no-js">
+        <ul class="website__list website__list--no-js">
           <li class="website__item">
             <a class="website__link" href="#">О компании</a>
           </li>
@@ -265,13 +269,13 @@
         </ul>
       </div>
       <div class="page-footer__office office">
-        <h3 class="office__title">Наш офис</h3>
+        <h3>Наш офис</h3>
         <button class="office__btn" type="button">
-          <span class="vissually-hidden">Открыть</span>
+          <span class="visually-hidden">Открыть</span>
         </button>
-        <ul class="office__list office--no-js">
+        <ul class="office__list office__list--no-js">
           <li class="office__item">
-            <p class="office__text">г. Мытищи, Олимпийский проспект, д.10</p>
+            <p>г. Мытищи, Олимпийский проспект, д.10</p>
           </li>
           <li class="office__item">
             <a class="office__link" href="tel:+7(495)589-40-50">
@@ -294,8 +298,8 @@
     <div class="page-footer__copyright copyright">
       <ul class="copyright__list">
         <li class="copyright__item copyright__item-rights">
-          <p class="copyright__text">Все права защищены</p>
-          <p class="copyright__text">1999-2018 SD Service Devices</p>
+          <p>Все права защищены</p>
+          <p>1999-2018 SD Service Devices</p>
         </li>
         <li class="copyright__item copyright__item-terms">
           <a class="copyright__link" href="#">Условия конфиденциальности</a>
@@ -308,26 +312,25 @@
   <div class="modal">
     <div class="modal__container">
       <button class="modal__btn-close" type="button">Закрыть</button>
-      <h2 class="modal__title">Закажите звонок</h2>
-      <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" method="post">
-        <label class="vissually-hidden" for="user-name-modal">Имя</label>
+        <label class="visually-hidden" for="user-name-modal">Имя</label>
         <input type="text" name="user-name" id="user-name-modal" placeholder="Имя" required>
-        <label class="vissually-hidden" for="user-phone-modal">Телефон</label>
+        <label class="visually-hidden" for="user-phone-modal">Телефон</label>
         <input type="tel" name="user-phone" id="user-phone-modal" placeholder="Телефон" required>
-        <label class="vissually-hidden" for="user-text-modal">Ваш вопрос</label>
+        <label class="visually-hidden" for="user-text-modal">Ваш вопрос</label>
         <textarea name="user-text" id="user-text-modal" placeholder="Ваш вопрос" required></textarea>
         <div class="modal__wrapper">
           <button class="button modal__btn" type="submit">Отправить</button>
-          <input class="vissually-hidden modal-form__input" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked>
-          <label class="modal-form__label" for="confidentiality-modal">Я согласен на обработку&nbsp;&nbsp;персональных данных</label>
+          <input class="visually-hidden" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked>
+          <label for="confidentiality-modal">Я согласен на обработку&nbsp;&nbsp;персональных данных</label>
         </div>
       </form>
     </div>
   </div>
-  <script src="js/pickturefill.js"></script>
-  <script src="js/imask.js"></script>
-  <script src="js/App.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 

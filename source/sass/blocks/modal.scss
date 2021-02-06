@@ -63,7 +63,7 @@
   padding-top: 10px;
 }
 
-.modal__title {
+.modal h2 {
   font-family: "RobotoCondensedRegular", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -76,7 +76,7 @@
   margin-top: 22px;
 }
 
-.modal__text {
+.modal p {
   margin: 0;
   margin-top: 12px;
 
@@ -169,7 +169,7 @@
   margin-top: 23px;
 }
 
-.modal-form__label {
+.modal__form label {
   font-size: 14px;
   line-height: 16px;
 
@@ -185,7 +185,7 @@
   padding-left: 49px;
 }
 
-.modal-form__input + label::before {
+.modal__form [type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -196,11 +196,11 @@
   cursor: pointer;
 }
 
-.modal-form__input:checked + label::after {
+.modal__form [type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 2px;
-  left: 4px;
+  left: 2px;
   width: 14px;
   height: 14px;
   background: url("../../img/icon-checked.svg") center no-repeat;
@@ -218,7 +218,7 @@
     width: 87.5%;
   }
 
-  .modal__text {
+  .modal p {
     width: 87.5%;
   }
 }

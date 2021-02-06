@@ -7,7 +7,7 @@ const websiteBtn = footer.querySelector(".website__btn");
 const websiteMenu = footer.querySelector(".website__list");
 const officeBtn = footer.querySelector(".office__btn");
 const officeMenu = footer.querySelector(".office__list");
-const contactBtn = document.querySelector(".question-form__btn");
+const contactBtn = document.querySelector(".question-form button");
 const userName = document.querySelector("#name");
 const userPhone = document.querySelector("#phone");
 const userPhoneModal = document.querySelector("#user-phone-modal");
@@ -19,8 +19,8 @@ const closeModalBtn = document.querySelector(".modal__btn-close");
 
 document.addEventListener("DOMContentLoaded", function (evt) {
   evt.preventDefault();
-  websiteMenu.classList.remove("website--no-js");
-  officeMenu.classList.remove("office--no-js");
+  websiteMenu.classList.remove("website__list--no-js");
+  officeMenu.classList.remove("office__list--no-js");
   websiteMenu.classList.add("website--closed");
   officeMenu.classList.add("office--closed");
 });
