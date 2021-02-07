@@ -64,7 +64,7 @@
 }
 
 .products span {
-  font-family: "RobotoCondensedRegular", sans-serif;
+  font-family: $font-robotoRegular;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -82,7 +82,7 @@
 }
 
 .products h2 {
-  font-family: "RobotoCondensedRegular", sans-serif;
+  font-family: $font-robotoRegular;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;

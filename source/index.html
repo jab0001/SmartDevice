@@ -19,48 +19,48 @@
 
   <header class="page-header">
     <div class="page-header__container">
-    <a class="page-header__logo" href="#">
-      <picture>
-        <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
-        <img src="img/logo-desktop.svg" width="239" height="52" alt="SmartDevice">
-      </picture>
-    </a>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="mailto:info@sd.ru">
-            <svg class="main-nav__img main-nav__img-mail" width="19" height="14">
-              <use xlink:href="#icon-mail"></use>
-            </svg>
-            <p>info@sd.ru</p>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="tel:+74954959595">
-            <svg class="main-nav__img main-nav__img-phone" width="18" height="18">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-            <p>+7 (495) 000 52 52</p>
-          </a>
-        </li>
-      </ul>
-      <a class="button main-nav__btn" href="#">Заказать звонок</a>
-    </div>
-      <section class="banner">
-        <h2>Печатные платы</h2>
-        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button banner__btn" href="#">
-          <span class="banner__btn--desktop">Получить бесплатную консультацию</span>
-          <span class="banner__btn--mobile">Бесплатная консультация</span>
-        </a>
+      <a class="page-header__logo" href="#">
         <picture>
-          <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
-          <img src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515"
-            alt="Платы нашего изготовления">
+          <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+          <img src="img/logo-desktop.svg" width="239" height="52" alt="SmartDevice">
         </picture>
-        <a class="banner__scroll" href="#">Скролл вниз</a>
-      </section>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="mailto:info@sd.ru">
+              <svg class="main-nav__img main-nav__img-mail" width="19" height="14">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+              <p>info@sd.ru</p>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="tel:+74954959595">
+              <svg class="main-nav__img main-nav__img-phone" width="18" height="18">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <p>+7 (495) 000 52 52</p>
+            </a>
+          </li>
+        </ul>
+        <a class="button main-nav__btn" href="#">Заказать звонок</a>
+    </div>
+    <section class="banner">
+      <h2>Печатные платы</h2>
+      <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <a class="button banner__btn" href="#">
+        <span class="banner__btn--desktop">Получить бесплатную консультацию</span>
+        <span class="banner__btn--mobile">Бесплатная консультация</span>
+      </a>
+      <picture>
+        <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp"> <!-- retina: 295 kb, no-retina: 102 kb  -->
+        <img src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515"
+          alt="Платы нашего изготовления"> <!-- retina: 1.9 mb, no-retina: 567 kb -->
+      </picture>
+      <a class="banner__scroll" href="#">Скролл вниз</a>
+    </section>
 
     </nav>
   </header>
@@ -108,9 +108,8 @@
       <section class="about-company">
         <h2 class="visually-hidden">О компании</h2>
         <picture>
-          <source srcset="img/year1x.webp 1x, img/year2x.webp 2x" type="image/webp">
-          <img src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55"
-            alt="2005 Year">
+          <source srcset="img/year1x.webp 1x, img/year2x.webp 2x" type="image/webp"> <!-- retina: 15,5 kb , no-retina: 7,68kb -->
+          <img src="img/year1x.jpg" srcset="img/year2x.jpg 2x" width="220" height="55" alt="2005 Year"> <!-- retina: 105 kb, no-retina: 46 kb -->
         </picture>
         <div class="about-company__wrapper">
           <h2>О компании</h2>
@@ -131,11 +130,13 @@
           <a class="products__link" href="#">
             <picture>
               <source type="image/webp" media="(max-width: 768px)"
-                srcset="img/chip-production-mobile1x.webp 1x, img/chip-production-mobile2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1024px)"
-                srcset="img/chip-production-tablet1x.webp 1x, img/chip-production-tablet2x.webp 2x">
+                srcset="img/chip-production-mobile1x.webp 1x, img/chip-production-mobile2x.webp 2x"> <!-- retina: 33.4 kb, no-retina: 13.6 kb -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/chip-production-tablet1x.webp 1x, img/chip-production-tablet2x.webp 2x"> <!-- retina: 52.8 kb, no-retina:  23 kb-->
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/chip-production1x.webp 1x, img/chip-production2x.webp 2x"> <!-- retina: 64 kb, no-retina: 25.8 kb-->
               <img src="img/chip-production1x.jpg" srcset="img/chip-production2x.jpg 2x" width="370" height="620"
-                alt="Производство печатных плат">
+                alt="Производство печатных плат"> <!-- retina: 304 kb, no-retina: 102 kb -->
             </picture>
             <span>Производство печатных плат</span>
           </a>
@@ -144,11 +145,13 @@
           <a class="products__link" href="#">
             <picture>
               <source type="image/webp" media="(max-width: 768px)"
-                srcset="img/chip-mounting-mobile1x.webp 1x, img/chip-mounting-mobile2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1024px)"
-                srcset="img/chip-mounting-tablet1x.webp 1x, img/chip-mounting-tablet2x.webp 2x">
+                srcset="img/chip-mounting-mobile1x.webp 1x, img/chip-mounting-mobile2x.webp 2x"> <!-- retina: 44.7 kb, no-retina: 16.9 kb -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/chip-mounting-tablet1x.webp 1x, img/chip-mounting-tablet2x.webp 2x"> <!-- retina: 82.8 kb, no-retina: 32.9 kb -->
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/chip-mounting1x.webp 1x, img/chip-mounting2x.webp 2x"> <!-- retina: 105 kb, no-retina: 40.9 kb -->
               <img src="img/chip-mounting1x.jpg" srcset="img/chip-mounting2x.jpg 2x" width="370" height="620"
-                alt="Монтаж печатных плат">
+                alt="Монтаж печатных плат"> <!-- retina: 421 kb, no-retina:  136 kb-->
             </picture>
             <span>Монтаж печатных плат</span>
           </a>
@@ -157,11 +160,13 @@
           <a class="products__link" href="#">
             <picture>
               <source type="image/webp" media="(max-width: 768px)"
-                srcset="img/chip-details-mobile1x.webp 1x, img/chip-details-mobile2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1024px)"
-                srcset="img/chip-details-tablet1x.webp 1x, img/chip-details-tablet2x.webp 2x">
+                srcset="img/chip-details-mobile1x.webp 1x, img/chip-details-mobile2x.webp 2x"> <!-- retina: 22.6 kb, no-retina: 9.14 kb -->
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/chip-details-tablet1x.webp 1x, img/chip-details-tablet2x.webp 2x"> <!-- retina: 25.5 kb, no-retina: 10 kb -->
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/chip-details1x.webp 1x, img/chip-details2x.webp 2x"> <!-- retina: 47 kb, no-retina: 20.2 kb -->
               <img src="img/chip-details1x.jpg" srcset="img/chip-details2x.jpg 2x" width="370" height="620"
-                alt="Комплектующие для светотехники">
+                alt="Комплектующие для светотехники"> <!-- retina: 257 kb, no-retina:  89.9 kb-->
             </picture>
             <span>Комплектующие для светотехники</span>
           </a>
@@ -172,9 +177,9 @@
       <h2 class="visually-hidden">Информация для обратной связи</h2>
       <div class="contacts__container">
         <picture>
-          <source srcset="img/papper-plane1x.webp 1x, img/papper-plane2x.webp 2x" type="image/webp">
+          <source srcset="img/papper-plane1x.webp 1x, img/papper-plane2x.webp 2x" type="image/webp"> <!-- retina: 25.6 kb, no-retina:  8.64 kb-->
           <img src="img/papper-plane1x.jpg" srcset="img/papper-plane2x.jpg 2x" width="511" height="288"
-            alt="Бумажный самолет">
+            alt="Бумажный самолет"> <!-- retina: 179 kb, no-retina:  56.4 kb-->
         </picture>
         <div class="contacts__wrapper">
           <h3>Остались вопросы? Задайте их нам!</h3>
@@ -184,13 +189,11 @@
             <input type="text" name="user-name" id="name" placeholder="Имя" required>
             <label class="visually-hidden" for="phone">Телефон</label>
             <input type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
-            <textarea name="user-text" id="message" placeholder="Ваш вопрос"
-              required></textarea>
+            <textarea name="user-text" id="message" placeholder="Ваш вопрос" required></textarea>
             <label class="visually-hidden" for="message">Ваш вопрос</label>
             <div class="question-form__wrapper">
               <button class="button question-form__btn" type="submit">Задать вопрос</button>
-              <input class="visually-hidden" type="checkbox" name="user-agreement"
-                id="confidentiality" checked>
+              <input class="visually-hidden" type="checkbox" name="user-agreement" id="confidentiality" checked>
               <label for="confidentiality">Я согласен на обработку персональных
                 данных</label>
             </div>
