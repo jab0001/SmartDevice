@@ -10,7 +10,7 @@
 }
 
 .about-company h2 {
-  font-family: $font-roboto;
+  font-family: $font-robotoRegular;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -78,12 +78,18 @@
     margin-top: 21px;
     max-height: 91px;
     max-width: 99%;
+  }
 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+  .about-company span {
+    display: none;
+    position: relative;
+  }
+
+  .about-company p + p {
+    &::after {
+      content: "..";
+      display: inline;
+    }
   }
 
   .about-company__wrapper {
@@ -127,12 +133,19 @@
   .about-company p {
     margin-bottom: 19px;
     margin-left: 4px;
+    max-width: 297px;
+  }
 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
+  .about-company span {
+    display: none;
+    position: relative;
+  }
+
+  .about-company p + p {
+    &::after {
+      content: "..";
+      display: inline;
+    }
   }
 
   .about-company__btn {

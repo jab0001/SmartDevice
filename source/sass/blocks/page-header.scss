@@ -9,8 +9,9 @@
 
   overflow: hidden;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/chip-desktop2x.png")  no-repeat, linear-gradient(#1b2d37 0%, #1b2d37 878px, white 878px, white 100%);
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/chip-desktop2x.png") no-repeat, linear-gradient(#1b2d37 0%, #1b2d37 878px, white 878px, white 100%);
   }
 }
 
