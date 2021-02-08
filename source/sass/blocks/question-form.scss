@@ -1,0 +1,196 @@
+.question-form {
+  margin-left: 93px;
+  margin-top: 50px;
+}
+
+.question-form input {
+  width: 250px;
+  height: 50px;
+  margin-left: 20px;
+
+  padding-left: 17px;
+
+  color: $white-color;
+
+  background: #19baff;
+
+  border: none;
+
+  outline: none;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $white-color;
+  }
+
+  &::placeholder {
+    padding-top: 14px;
+    color: $white-color;
+  }
+}
+
+.question-form textarea {
+  width: 550px;
+  min-height: 136px;
+
+  padding-top: 14px;
+
+  padding-left: 17px;
+
+  margin-top: 38px;
+  margin-left: 19px;
+
+  color: $white-color;
+
+  background: #19baff;
+
+  outline: none;
+
+  border: none;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $white-color;
+  }
+
+  &::placeholder {
+    color: $white-color;
+  }
+}
+
+.question-form__btn {
+  width: 270px;
+  height: 45px;
+
+  padding: 0;
+
+  color: $white-color;
+
+  display: block;
+
+  background: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background: $text-color;
+  }
+}
+
+.question-form__wrapper {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 42px;
+}
+
+.question-form label {
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $white-color;
+
+  opacity: 0.8;
+
+  position: relative;
+
+  max-width: 230px;
+
+  margin-top: 8px;
+  padding-left: 70px;
+
+  cursor: pointer;
+}
+
+.question-form [type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 38px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid $white-color;
+  cursor: pointer;
+}
+
+.question-form [type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 40px;
+  width: 14px;
+  height: 14px;
+  background: url("../../img/icon-checked.svg") center no-repeat;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .question-form {
+    margin-left: 10px;
+    margin-top: 54px;
+  }
+
+  .question-form input {
+    width: 260px;
+    margin-right: 5px;
+  }
+
+  .question-form textarea {
+    width: 572px;
+    min-height: 146px;
+  }
+
+  .question-form__wrapper {
+    margin-top: 39px;
+  }
+
+  .question-form__btn {
+    width: 280px;
+  }
+
+  .question-form label {
+    padding-left: 73px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .question-form {
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  .question-form input {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 270px;
+  }
+
+  .question-form textarea {
+    margin: 0;
+    width: 270px;
+    min-height: 90px;
+  }
+
+  .question-form__wrapper {
+    flex-direction: column;
+
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .question-form__btn {
+    width: 100%;
+  }
+
+  .question-form label {
+    margin-top: 30px;
+    padding-left: 33px;
+  }
+
+  .question-form [type="checkbox"] + label::before {
+    left: 0;
+  }
+
+  .question-form [type="checkbox"]:checked + label::after {
+    left: 0;
+  }
+}

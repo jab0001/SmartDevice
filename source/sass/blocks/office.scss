@@ -1,0 +1,144 @@
+.office__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.office h3 {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $text-color;
+
+  margin: 0;
+  margin-top: 64px;
+  margin-bottom: 25px;
+  margin-left: 2px;
+}
+
+.office__item p,
+.office__link {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: $text-color;
+
+  opacity: 0.5;
+
+  margin: 0;
+
+  letter-spacing: inherit;
+  text-transform: none;
+}
+
+.office__link:hover {
+  opacity: 1;
+}
+
+.office__btn {
+  display: none;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    right: 16px;
+    top: 37px;
+
+    background: #c4c4c4;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    right: 16px;
+    top: 37px;
+
+    background: #c4c4c4;
+
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .office {
+    width: 46.5%;
+    margin-top: 10px;
+  }
+
+  .office__item p {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .office {
+    position: relative;
+
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid #dcdddc;
+  }
+
+  .office__list {
+    margin: 0 auto;
+    min-width: 287px;
+    max-width: 287px;
+    max-height: 100%;
+
+    margin-bottom: 28px;
+  }
+
+  .office--closed {
+    display: none;
+  }
+
+  .office--opened {
+    display: block;
+  }
+
+  .office h3 {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 31px;
+    max-width: 290px;
+  }
+
+  .office__btn {
+    display: block;
+    outline: none;
+
+    &--remove::before {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .office--no-js {
+    display: block;
+  }
+}

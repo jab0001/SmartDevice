@@ -1,0 +1,154 @@
+.advantages {
+  padding-top: 84px;
+}
+
+.advantages__list {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 35px;
+
+  max-width: 1200px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  .advantages__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+.advantages__icon {
+  fill: $second-color;
+}
+
+.advantages__item {
+  width: 47.5%;
+  min-height: 299px;
+  margin-top: 30px;
+  padding-top: 37px;
+  padding-left: 43px;
+
+  border: 1px solid #ebebeb;
+  border-left: 3px solid $second-color;
+  box-sizing: border-box;
+
+  background: $white-color;
+
+  cursor: pointer;
+
+  h3 {
+    font-family: $font-robotoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+
+
+    color: $second-color;
+
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  p {
+    color: $second-text-color;
+
+    margin: 0;
+    margin-top: 16px;
+    width: 92.74%;
+  }
+
+  svg {
+    fill: $second-color;
+  }
+
+  &:hover {
+    background: $second-color;
+
+    p {
+      color: $white-color;
+    }
+
+    h3 {
+      color: $white-color;
+    }
+
+    svg {
+      fill: $white-color;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .advantages {
+    margin-top: 24px;
+    padding-top: 0;
+  }
+
+  .advantages__item {
+    width: 47.3%;
+    padding-left: 25px;
+    padding-top: 24px;
+
+    min-height: 232px;
+
+    box-sizing: border-box;
+
+    h3 {
+      margin-top: 3px;
+    }
+
+    p {
+      margin-top: 6px;
+      margin-bottom: 21px;
+    }
+  }
+
+  .advantages__list {
+    padding-left: 23px;
+
+    min-height: 583px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    margin-top: 17px;
+    padding-top: 0;
+  }
+
+  .advantages__list {
+    padding-left: 14px;
+
+    .advantages__item:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
+
+  .advantages__item {
+    width: 95.5%;
+    padding-top: 23px;
+    padding-left: 23px;
+    margin-top: 20px;
+
+    min-height: 232px;
+
+    box-sizing: border-box;
+
+    h3 {
+      font-size: 20px;
+      line-height: 28px;
+
+      margin-top: 7px;
+    }
+
+    p {
+      margin-top: 9px;
+      margin-bottom: 27px;
+
+      width: 95.74%;
+    }
+  }
+}
