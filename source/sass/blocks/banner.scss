@@ -77,7 +77,9 @@
   p {
     margin: 0;
   }
+}
 
+.banner__btn-text {
   &--mobile {
     display: none;
   }
@@ -153,7 +155,9 @@
   .banner__btn {
     width: 379px;
     margin-left: 138px;
+  }
 
+  .banner__btn-text {
     &--mobile {
       display: none;
     }
@@ -218,7 +222,9 @@
   .banner__btn {
     margin-left: 18px;
     width: 90.07%;
+  }
 
+  .banner__btn-text {
     &--desktop {
       display: none;
     }
