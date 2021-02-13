@@ -1,21 +1,17 @@
 .website {
-  margin-left: 140px;
+  margin-left: 104px;
 }
 
 .website__item {
-  margin-right: 65px;
+  margin-left: 75px;
 }
 
 .website__list {
   margin: 0;
   padding: 0;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  max-height: 100px;
-  min-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   list-style: none;
 }
@@ -50,6 +46,7 @@
   margin: 0;
   margin-bottom: 26px;
   margin-top: 64px;
+  margin-left: 76px;
 }
 
 .website__btn {
@@ -98,13 +95,22 @@
   }
 
   .website h3 {
+    margin: 0;
     margin-bottom: 23px;
     margin-top: 73px;
   }
 
   .website__list {
-    max-height: none;
-    min-width: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .website__item {
+    margin: 0;
+
+    &:nth-child(2n) {
+      order: 2;
+    }
   }
 }
 
@@ -115,6 +121,7 @@
     margin-top: 48px;
     width: 100%;
     border-bottom: 1px solid #dcdddc;
+    border-top: 1px solid #dcdddc;
   }
 
   .website__list {
@@ -152,6 +159,10 @@
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  .website__item {
+    margin: 0;
   }
 
   .website--no-js {
