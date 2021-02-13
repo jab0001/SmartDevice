@@ -41,10 +41,12 @@
     if (websiteMenu) {
       websiteMenu.classList.remove('website__list--no-js');
       websiteMenu.classList.add('website--closed');
+      websiteBtn.classList.remove('website__btn--no-js');
     }
     if (officeMenu) {
       officeMenu.classList.remove('office__list--no-js');
       officeMenu.classList.add('office--closed');
+      officeBtn.classList.remove('office__btn--no-js');
     }
   });
 
@@ -53,6 +55,10 @@
       evt.preventDefault();
       websiteMenu.classList.toggle('website--opened');
       websiteBtn.classList.toggle('website__btn--remove');
+      if (officeMenu.classList.contains('office--opened')) {
+        officeMenu.classList.remove('office--opened');
+        officeBtn.classList.remove('office__btn--remove');
+      }
     });
   }
 
@@ -61,6 +67,10 @@
       evt.preventDefault();
       officeMenu.classList.toggle('office--opened');
       officeBtn.classList.toggle('office__btn--remove');
+      if (websiteMenu.classList.contains('website--opened')) {
+        websiteMenu.classList.remove('website--opened');
+        websiteBtn.classList.remove('website__btn--remove');
+      }
     });
   }
 
@@ -84,7 +94,7 @@
 
 
   if (contactBtn) {
-    contactBtn.addEventListener('click', function (evt) {
+    contactBtn.addEventListener('click', function () {
 
       localStorage.setItem('user-name', userName.value);
       localStorage.setItem('user-phone', userPhone.value);

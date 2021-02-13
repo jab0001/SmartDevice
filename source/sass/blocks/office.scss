@@ -151,4 +151,11 @@
   .office--no-js {
     display: block;
   }
+
+  .office__btn--no-js {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }

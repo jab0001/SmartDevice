@@ -168,4 +168,11 @@
   .website--no-js {
     display: block;
   }
+
+  .website__btn--no-js {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
