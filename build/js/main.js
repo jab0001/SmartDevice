@@ -110,6 +110,7 @@
           popup.classList.remove('modal--active');
           popupFog.classList.remove('fog--active');
           body.classList.remove('noscroll');
+          popup.classList.add('modal-js');
         }
       }
     });
@@ -120,6 +121,7 @@
         popup.classList.remove('modal--active');
         popupFog.classList.remove('fog--active');
         body.classList.remove('noscroll');
+        popup.classList.add('modal-js');
       }
     });
 
@@ -130,6 +132,7 @@
           popup.classList.remove('modal--active');
           popupFog.classList.remove('fog--active');
           body.classList.remove('noscroll');
+          popup.classList.add('modal-js');
         }
       });
     }
@@ -137,7 +140,7 @@
       openModalBtn.addEventListener('click', function (event) {
         event.preventDefault();
         popup.classList.add('modal--active');
-        popup.classList.remove('modal--js-no');
+        popup.classList.remove('modal-js');
         popupFog.classList.add('fog--active');
         body.classList.add('noscroll');
         nameInput.focus();
