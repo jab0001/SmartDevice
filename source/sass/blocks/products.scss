@@ -1,13 +1,13 @@
 .products {
   background: #1b2d37;
-  padding-bottom: 120px;
+  padding-bottom: 96px;
 }
 
 .products__list {
   margin: 0 auto;
   margin-top: 52px;
   padding: 0;
-  padding-left: 58px;
+  padding-left: 42px;
 
   max-width: 1212px;
 
@@ -61,6 +61,7 @@
 .products__item {
   width: 30.53%;
   margin-right: 2.48%;
+  margin-bottom: 25px;
 }
 
 .products span {
@@ -94,12 +95,12 @@
   display: block;
   margin: 0 auto;
   padding-top: 88px;
-  max-width: 1150px;
+  max-width: 1170px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .products {
-    padding-bottom: 120px;
+    padding-bottom: 32px;
   }
 
   .products h2 {
@@ -120,7 +121,7 @@
   .products__item {
     margin: 0;
     margin-bottom: 45px;
-    width: 98.6%;
+    width: 96.8%;
     height: 256px;
 
     overflow: hidden;
@@ -131,7 +132,7 @@
     height: 256px;
 
     &::after {
-      bottom: 0;
+      bottom: 2px;
     }
   }
 

@@ -9,6 +9,9 @@
 
   overflow: hidden;
 
+  padding-left: 30px;
+  padding-right: 30px;
+
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
     background-image: url("../img/chip-desktop2x.png") no-repeat, linear-gradient(#1b2d37 0%, #1b2d37 878px, white 878px, white 100%);
@@ -16,7 +19,7 @@
 }
 
 .page-header__container {
-  min-width: 1411px;
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
@@ -25,23 +28,34 @@
 .page-header__logo {
   display: block;
   margin-top: 33px;
+  margin-left: auto;
 
   width: 203px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-header {
+    padding: 0;
+  }
+
   .page-header__container {
     min-width: 770px;
+
+    justify-content: space-between;
   }
 
   .page-header__logo {
-    margin-top: 22px;
-    margin-left: 25px;
-    width: 245px;
+    margin-top: 20px;
+    margin-left: 23px;
+    width: 224px;
   }
 }
 
 @media (max-width: $tablet-width) {
+  .page-header {
+    padding: 0;
+  }
+
   .page-header__container {
     min-width: 100%;
   }

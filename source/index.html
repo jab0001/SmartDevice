@@ -20,9 +20,9 @@
 
   <header class="page-header">
     <div class="page-header__container">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo">
         <picture>
-          <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
           <img src="img/logo-desktop.svg" width="239" height="52" alt="SmartDevice">
         </picture>
       </a>
@@ -52,8 +52,8 @@
       <h2>Печатные платы</h2>
       <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <a class="button banner__btn" href="#">
-        <span class="banner__btn-text banner__btn-text--desktop">Получить бесплатную консультацию</span>
-        <span class="banner__btn-text banner__btn-text--mobile">Бесплатная консультация</span>
+        <span class="banner__text banner__text--desktop">Получить бесплатную консультацию</span>
+        <span class="banner__text banner__text--mobile">Бесплатная консультация</span>
       </a>
       <picture>
         <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
@@ -121,7 +121,7 @@
             предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-            Железных Дорог<span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
+            Железных Дорог<span> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
               крупнейшие Производители светотехники России.</span></p>
           <a class="button about-company__btn" href="#">Подробнее</a>
         </div>
@@ -202,12 +202,12 @@
             <label class="visually-hidden" for="name">Имя</label>
             <input type="text" name="user-name" id="name" placeholder="Имя" required>
             <label class="visually-hidden" for="phone">Телефон</label>
-            <input type="tel" name="user-phone" id="phone" placeholder="Телефон" required>
-            <textarea name="user-text" id="message" placeholder="Ваш вопрос" required></textarea>
+            <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="user-phone" id="phone" placeholder="Телефон" required>
+            <textarea name="user-text" id="message" placeholder="Ваш вопрос"></textarea>
             <label class="visually-hidden" for="message">Ваш вопрос</label>
             <div class="question-form__wrapper">
               <button class="button question-form__btn" type="submit">Задать вопрос</button>
-              <input class="visually-hidden" type="checkbox" name="user-agreement" id="confidentiality" checked>
+              <input class="visually-hidden" type="checkbox" name="user-agreement" id="confidentiality" checked required>
               <label for="confidentiality">Я согласен на обработку персональных
                 данных</label>
             </div>
@@ -328,22 +328,22 @@
   <div class="fog"></div>
   <div class="modal">
     <div class="modal__container">
-      <button class="modal__btn-close" type="button">Закрыть</button>
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" method="post">
         <label class="visually-hidden" for="user-name-modal">Имя</label>
         <input type="text" name="user-name" id="user-name-modal" placeholder="Имя" required>
         <label class="visually-hidden" for="user-phone-modal">Телефон</label>
-        <input type="tel" name="user-phone" id="user-phone-modal" placeholder="Телефон" required>
+        <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="user-phone" id="user-phone-modal" placeholder="Телефон" required>
         <label class="visually-hidden" for="user-text-modal">Ваш вопрос</label>
-        <textarea name="user-text" id="user-text-modal" placeholder="Ваш вопрос" required></textarea>
+        <textarea name="user-text" id="user-text-modal" placeholder="Ваш вопрос"></textarea>
         <div class="modal__wrapper">
           <button class="button modal__btn" type="submit">Отправить</button>
-          <input class="visually-hidden" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked>
+          <input class="visually-hidden" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked required>
           <label for="confidentiality-modal">Я согласен на обработку&nbsp;&nbsp;персональных данных</label>
         </div>
       </form>
+      <button class="modal__btn-close" type="button">Закрыть</button>
     </div>
   </div>
   <script src="js/vendor.js"></script>

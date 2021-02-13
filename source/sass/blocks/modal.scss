@@ -56,6 +56,14 @@
   }
 }
 
+.modal__btn-close:focus,
+.modal__btn-close:hover {
+  &::before,
+  &::after {
+    background-color: $text-color;
+  }
+}
+
 .modal__container {
   width: 412px;
 
@@ -134,6 +142,8 @@
 
   box-sizing: border-box;
 
+  resize: none;
+
   &:hover,
   &:focus {
     border: 1px solid $white-color;
@@ -166,6 +176,8 @@
 .modal__wrapper {
   display: flex;
   flex-direction: column;
+
+  position: relative;
   margin-top: 23px;
 }
 
@@ -183,6 +195,8 @@
 
   margin-top: 34px;
   padding-left: 49px;
+
+  outline: none;
 }
 
 .modal__form [type="checkbox"] + label::before {
@@ -194,6 +208,10 @@
   height: 14px;
   border: 1px solid $white-color;
   cursor: pointer;
+}
+
+.modal__form [type="checkbox"]:focus + label::before {
+  border: 1px solid $text-color;
 }
 
 .modal__form [type="checkbox"]:checked + label::after {

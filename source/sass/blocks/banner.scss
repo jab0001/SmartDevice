@@ -1,7 +1,7 @@
 .banner {
   margin: 0 auto;
 
-  min-width: 1411px;
+  min-width: 1420px;
   min-height: 788px;
   position: relative;
   background: url("../img/triangle.svg") no-repeat;
@@ -25,7 +25,7 @@
   width: 50.89%;
   margin: 0;
   padding: 0;
-  padding-top: 225px;
+  padding-top: 224px;
 }
 
 .banner p {
@@ -37,9 +37,9 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 26px;
+  margin-top: 27px;
   margin-bottom: 44px;
-  padding-left: 6.73%;
+  padding-left: 6.8%;
   width: 44%;
 
   &::after {
@@ -67,7 +67,7 @@
   border-radius: 5px;
   border: none;
 
-  margin-left: 96px;
+  margin-left: 97px;
 
   &:hover {
     background: none;
@@ -79,7 +79,7 @@
   }
 }
 
-.banner__btn-text {
+.banner__text {
   &--mobile {
     display: none;
   }
@@ -97,7 +97,7 @@
   display: block;
   position: absolute;
   bottom: 127px;
-  left: -36px;
+  left: -35px;
 
   &:hover {
     opacity: 1;
@@ -107,7 +107,7 @@
 .banner img {
   position: absolute;
   top: 168px;
-  right: -81px;
+  right: -74px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -117,21 +117,21 @@
 
     padding-bottom: 7px;
     position: relative;
-    background-size: 1500px auto;
-    background-position-x: -364px;
-    background-position-y: -205px;
+    background-size: 1505px auto;
+    background-position-x: -366px;
+    background-position-y: -211px;
   }
 
   .banner img {
     width: 465px;
-    top: 37px;
+    top: 34px;
     right: -205px;
   }
 
   .banner h2 {
     width: 61.04%;
-    padding-top: 112px;
-    margin-left: 86px;
+    padding-top: 108px;
+    margin-left: 88px;
 
     font-size: 60px;
     line-height: 70px;
@@ -142,7 +142,7 @@
     line-height: 28px;
 
     padding-left: 138px;
-    margin-top: 29px;
+    margin-top: 30px;
     margin-bottom: 54px;
 
     &::after {
@@ -157,7 +157,7 @@
     margin-left: 138px;
   }
 
-  .banner__btn-text {
+  .banner__text {
     &--mobile {
       display: none;
     }
@@ -175,16 +175,16 @@
     position: relative;
     background-size: 1439px auto;
     background-position-x: -619px;
-    background-position-y: -192px;
+    background-position-y: -189px;
 
-    padding-bottom: 7px;
+    padding-bottom: 11px;
 
     overflow: hidden;
   }
 
   .banner img {
     width: 301px;
-    top: 32px;
+    top: 36px;
     left: 8%;
 
     overflow: hidden;
@@ -197,6 +197,7 @@
     line-height: 47px;
 
     margin-left: 15px;
+    padding-top: 229px;
 
     width: 90%;
 
@@ -220,11 +221,11 @@
   }
 
   .banner__btn {
-    margin-left: 18px;
-    width: 90.07%;
+    margin: 0 auto;
+    width: 288px;
   }
 
-  .banner__btn-text {
+  .banner__text {
     &--desktop {
       display: none;
     }

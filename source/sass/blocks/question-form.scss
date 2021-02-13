@@ -1,5 +1,5 @@
 .question-form {
-  margin-left: 93px;
+  margin-left: 83px;
   margin-top: 50px;
 }
 
@@ -31,7 +31,7 @@
 
 .question-form textarea {
   width: 550px;
-  min-height: 136px;
+  min-height: 138px;
 
   padding-top: 14px;
 
@@ -47,6 +47,8 @@
   outline: none;
 
   border: none;
+
+  resize: none;
 
   &:hover,
   &:focus {
@@ -79,8 +81,9 @@
 
 .question-form__wrapper {
   display: flex;
+  position: relative;
   margin-left: 20px;
-  margin-top: 42px;
+  margin-top: 38px;
 }
 
 .question-form label {
@@ -125,7 +128,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .question-form {
-    margin-left: 10px;
+    margin-left: 11px;
     margin-top: 54px;
   }
 
@@ -136,7 +139,11 @@
 
   .question-form textarea {
     width: 572px;
-    min-height: 146px;
+
+    margin-top: 42px;
+    margin-left: 21px;
+
+    min-height: 143px;
   }
 
   .question-form__wrapper {
@@ -145,10 +152,21 @@
 
   .question-form__btn {
     width: 280px;
+
+    height: 46px;
   }
 
   .question-form label {
     padding-left: 73px;
+  }
+
+  .question-form [type="checkbox"] + label::before {
+    top: 2px;
+    left: 40px;
+  }
+
+  .question-form [type="checkbox"]:checked + label::after {
+    left: 42px;
   }
 }
 
@@ -159,14 +177,16 @@
   }
 
   .question-form input {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 30px;
-    width: 270px;
+    width: 94%;
   }
 
   .question-form textarea {
-    margin: 0;
-    width: 270px;
+    display: block;
+    margin: 0 auto;
+    width: 94%;
     min-height: 90px;
   }
 
@@ -174,7 +194,7 @@
     flex-direction: column;
 
     margin: 0;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   .question-form__btn {

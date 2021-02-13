@@ -37,7 +37,7 @@
   display: block;
 
   width: 180px;
-  margin-top: 39px;
+  margin-top: 40px;
 
   border: 1px solid $second-color;
   box-sizing: border-box;
@@ -52,6 +52,7 @@
 .about-company img {
   position: absolute;
   top: 5px;
+  left: -9px;
 
   z-index: 1;
 }
@@ -59,7 +60,7 @@
 .about-company__wrapper {
   position: relative;
 
-  margin-left: 209px;
+  margin-left: 201px;
 
   z-index: 2;
 }
@@ -67,6 +68,7 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .about-company {
     margin-top: 57px;
+    margin-bottom: 81px;
   }
 
   .about-company h2 {
@@ -75,9 +77,9 @@
   }
 
   .about-company p {
-    margin-top: 21px;
+    margin-top: 22px;
     max-height: 91px;
-    max-width: 99%;
+    max-width: 95%;
   }
 
   .about-company span {
@@ -102,6 +104,10 @@
     top: -1px;
     left: -9px;
   }
+
+  .about-company__btn {
+    margin-top: 43px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -118,7 +124,7 @@
 
   .about-company__wrapper {
     margin: 0 auto;
-    margin-left: 12px;
+    margin-left: 13px;
     display: flex;
     flex-direction: column;
 
@@ -126,14 +132,14 @@
   }
 
   .about-company {
-    margin-top: 54px;
+    margin-top: 58px;
     margin-bottom: 65px;
   }
 
   .about-company p {
     margin-bottom: 19px;
     margin-left: 4px;
-    max-width: 297px;
+    width: 97%;
   }
 
   .about-company span {

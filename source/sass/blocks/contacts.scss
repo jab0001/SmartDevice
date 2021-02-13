@@ -6,9 +6,9 @@
 }
 
 .contacts__container {
-  max-width: 1210px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 92px;
   display: flex;
   position: relative;
 }
@@ -23,13 +23,13 @@
   color: $white-color;
 
   margin: 0;
-  margin-left: 110px;
+  margin-left: 99px;
 }
 
 .contacts p {
   margin: 0;
   margin-top: 10px;
-  margin-left: 114px;
+  margin-left: 103px;
 
   color: $white-color;
 }
@@ -38,6 +38,8 @@
   position: absolute;
   top: 160px;
   left: 0;
+
+  width: 42%;
 }
 
 .contacts__wrapper {
@@ -51,6 +53,8 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .contacts {
     min-height: 664px;
+
+    background: $second-color;
   }
 
   .contacts__container {
@@ -59,7 +63,7 @@
   }
 
   .contacts__wrapper {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .contacts h3 {
@@ -83,6 +87,8 @@
 @media (max-width: $tablet-width) {
   .contacts {
     min-height: 640px;
+
+    background: $second-color;
   }
 
   .contacts__container {
