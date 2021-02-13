@@ -69,7 +69,10 @@
 
   margin-left: 97px;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     background: none;
     border: 1px solid $white-color;
   }
@@ -99,7 +102,10 @@
   bottom: 127px;
   left: -35px;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     opacity: 1;
   }
 }

@@ -38,9 +38,12 @@
 
   letter-spacing: inherit;
   text-transform: none;
+
+  outline: none;
 }
 
-.office__link:hover {
+.office__link:hover,
+.office__link:focus {
   opacity: 1;
 }
 

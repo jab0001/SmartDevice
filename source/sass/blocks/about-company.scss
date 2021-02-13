@@ -43,7 +43,10 @@
   box-sizing: border-box;
   border-radius: 5px;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     color: $white-color;
     background: $second-color;
   }

@@ -74,7 +74,10 @@
 
   cursor: pointer;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     background: $text-color;
   }
 }
@@ -113,6 +116,10 @@
   height: 14px;
   border: 1px solid $white-color;
   cursor: pointer;
+}
+
+.question-form [type="checkbox"]:focus + label::before {
+  border: 1px solid $text-color;
 }
 
 .question-form [type="checkbox"]:checked + label::after {

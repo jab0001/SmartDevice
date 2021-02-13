@@ -18,7 +18,10 @@
 .social__link {
   fill: #cdcdcd;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     fill: $text-color;
   }
 }

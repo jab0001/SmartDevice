@@ -45,9 +45,12 @@
   letter-spacing: 0.04em;
 
   margin: 0;
+
+  outline: none;
 }
 
-.copyright__link:hover {
+.copyright__link:hover,
+.copyright__link:focus {
   opacity: 1;
 }
 

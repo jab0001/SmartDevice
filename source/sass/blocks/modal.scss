@@ -168,7 +168,10 @@
 
   cursor: pointer;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     background: $text-color;
   }
 }

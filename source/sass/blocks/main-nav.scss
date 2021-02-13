@@ -32,8 +32,10 @@
   position: relative;
 
   color: $white-color;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 
@@ -50,7 +52,10 @@
   margin-left: 50px;
   margin-top: 37px;
 
-  &:hover {
+  outline: none;
+
+  &:hover,
+  &:focus {
     background: $second-color;
   }
 }
