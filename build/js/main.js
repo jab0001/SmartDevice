@@ -137,6 +137,7 @@
       openModalBtn.addEventListener('click', function (event) {
         event.preventDefault();
         popup.classList.add('modal--active');
+        popup.classList.remove('modal--js-no');
         popupFog.classList.add('fog--active');
         body.classList.add('noscroll');
         nameInput.focus();

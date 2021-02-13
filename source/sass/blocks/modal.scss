@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   width: 490px;
   min-height: 605px;
@@ -11,6 +11,10 @@
   background-color: $second-color;
 
   z-index: 7;
+}
+
+.modal-js {
+  display: none;
 }
 
 .modal--active {
@@ -224,7 +228,7 @@
   left: 2px;
   width: 14px;
   height: 14px;
-  background: url("../../img/icon-checked.svg") center no-repeat;
+  background: url("../img/icon-checked.svg") center no-repeat;
   cursor: pointer;
 }
 

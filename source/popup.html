@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart Device Popup</title>
+  <link rel="preload" href="fonts/ptMono.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/robotoCondensed-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/robotoCondensed.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div style="display:none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <div class="modal">
+    <div class="modal__container">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="modal__form" method="post">
+        <label class="visually-hidden" for="user-name-modal">Имя</label>
+        <input type="text" name="user-name" id="user-name-modal" placeholder="Имя" required>
+        <label class="visually-hidden" for="user-phone-modal">Телефон</label>
+        <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="user-phone" id="user-phone-modal" placeholder="Телефон" required>
+        <label class="visually-hidden" for="user-text-modal">Ваш вопрос</label>
+        <textarea name="user-text" id="user-text-modal" placeholder="Ваш вопрос"></textarea>
+        <div class="modal__wrapper">
+          <button class="button modal__btn" type="submit">Отправить</button>
+          <input class="visually-hidden" type="checkbox" name="user-confidentiality" id="confidentiality-modal" checked required>
+          <label for="confidentiality-modal">Я согласен на обработку&nbsp;&nbsp;персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
