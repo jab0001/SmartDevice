@@ -1,5 +1,5 @@
 .fog {
-  display: none;
+  display: block;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -12,6 +12,11 @@
 
   z-index: 6;
 }
+
+.fog-js {
+  display: none;
+}
+
 
 .fog--active {
   display: block;

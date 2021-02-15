@@ -60,6 +60,55 @@
 </symbol></svg>
   </div>
 
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+          <img src="img/logo-desktop.svg" width="239" height="52" alt="SmartDevice">
+        </picture>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="mailto:info@sd.ru">
+              <svg class="main-nav__img main-nav__img-mail" width="19" height="14">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+              <p>info@sd.ru</p>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="tel:+74954959595">
+              <svg class="main-nav__img main-nav__img-phone" width="18" height="18">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <p>+7 (495) 000 52 52</p>
+            </a>
+          </li>
+        </ul>
+        <a class="button main-nav__btn" href="popup.html">Заказать звонок</a>
+    </nav></div>
+    <section class="banner">
+      <h2>Печатные платы</h2>
+      <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <a class="button banner__btn" href="#">
+        <span class="banner__text banner__text--desktop">Получить бесплатную консультацию</span>
+        <span class="banner__text banner__text--mobile">Бесплатная консультация</span>
+      </a>
+      <picture>
+        <source srcset="img/banner-chip1x.webp 1x, img/banner-chip2x.webp 2x" type="image/webp">
+        <!-- retina: 295 kb, no-retina: 102 kb  -->
+        <img src="img/banner-chip1x.png" srcset="img/banner-chip2x.png 2x" width="705" height="515" alt="Платы нашего изготовления"> <!-- retina: 1.9 mb, no-retina: 567 kb -->
+      </picture>
+      <a class="banner__scroll" href="#">Скролл вниз</a>
+    </section>
+
+    
+  </header>
+
+  <div class="fog"></div>
   <div class="modal">
     <div class="modal__container">
       <h2>Закажите звонок</h2>
