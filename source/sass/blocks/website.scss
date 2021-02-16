@@ -1,9 +1,11 @@
 .website {
-  margin-left: 104px;
+  margin-left: 10.9%;
 }
 
 .website__item {
-  margin-left: 75px;
+  margin-left: 50px;
+  padding-right: 25px;
+  white-space: nowrap;
 }
 
 .website__list {
@@ -49,7 +51,7 @@
   margin: 0;
   margin-bottom: 26px;
   margin-top: 64px;
-  margin-left: 76px;
+  margin-left: 51px;
 }
 
 .website__btn {
@@ -110,6 +112,7 @@
 
   .website__item {
     margin: 0;
+    padding: 0;
 
     &:nth-child(2n) {
       order: 2;
@@ -166,6 +169,7 @@
 
   .website__item {
     margin: 0;
+    padding: 0;
   }
 
   .website--no-js {
