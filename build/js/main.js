@@ -23,7 +23,7 @@
   var nameInput = document.querySelector('#user-name-modal');
 
   var maskOptions = {
-    mask: '+{7}(000)000-00-00'
+    mask: '+{7}(000)0000000'
   };
 
   var maskNumber = function (phone, mask) {
